@@ -43,8 +43,8 @@ public class MainController {
         String line = perimeter.toString() + ":" + ar.toString();
         FileHandler handler = new FileHandler();
         handler.writeFile(line);
-        //TODO: adatbázisba írás
     }
+    
     
 }
 
