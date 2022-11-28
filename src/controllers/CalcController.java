@@ -1,23 +1,32 @@
 /*
- * File: CalcController.java
+ * File: App.java
  * Created Date: 2020-09-15
- * Author: Nagy János
+ * Author: Sallai Andras
  * Github: https://github.com/andteki
- * Copyright (c) 2020-2022 Nagy János
+ * -----
+ * Last Modified: 2022-11-28
+ * Modified By: Sallai Andras
+ * -----
+ * Copyright (c) 2021 Sallai Andras
  * 
  * GNU GPL v2
+ * 
+ * 
+ *  Refaktorálta Orosz Levente
+ * 
+ * 
+ * 2022.11.28
  */
 
 package controllers;
 
-// osztály létrehozása
+
 public class CalcController {
-    /* Bemenő paraméterek a oldal és b oldal */
     public static double calcPerimeter( double aSide, double bSide) {
-        return aSide + bSide; //összeadjuk a és b oldalt
-    } /* calcPerimeter vége */
+        return aSide + bSide;
+    } 
 
     public static double calcArea(double aSide, double bSide) {
-        return aSide * bSide; //összeszorozzuk a és b oldalt
-    }/* calcArea vége */
+        return aSide * bSide; 
+    }
 }

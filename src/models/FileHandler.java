@@ -1,30 +1,37 @@
 /*
- * File: FileHandler.java
+ * File: App.java
  * Created Date: 2020-09-15
- * Author: Nagy János
+ * Author: Sallai Andras
  * Github: https://github.com/andteki
- * Copyright (c) 2020-2022 Nagy János
+ * -----
+ * Last Modified: 2022-11-28
+ * Modified By: Sallai Andras
+ * -----
+ * Copyright (c) 2021 Sallai Andras
  * 
  * GNU GPL v2
+ * 
+ * 
+ *  Refaktorálta Orosz Levente
+ * 
+ * 
+ * 2022.11.28
  */
+
 package models;
-//Az importáló sorok
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-// A FileHandler osztály létrehozása
+
 public class FileHandler {
     String fileName;
     public FileHandler() {
         this.fileName = "adat.txt";
     }
-    /* A fájlbaírás mellet szükség lesz egy
-     * adatbázisba író osztályra is. 
-     */
-    /* Fájlbaírás */
     public void writeFile(String line) {
-        // hiba próba:
+        
         try {
             FileWriter f = new FileWriter(this.fileName, true);
             PrintWriter p = new PrintWriter(f);
